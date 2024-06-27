@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link id="main_stylesheet" rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <button type="button" class="theme_toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+	<div class="main_container">
+        <nav class="nav_bar">
+            <a class="nav_button" href="index.html">Home</a>
+            <a class="nav_button nav_button_current" href="portfolio.html">Portfolio</a>
+            <a class="nav_button" href="qualifications.html">Qualifications</a>
+            <a class="nav_button" href="service.html">Service</a>
+            <a class="nav_button" href="ai_corner.html">AI Corner</a>
+        </nav>
+        <div class="main_content">
+            <h1>Portfolio</h1>
+            <div class="content_section">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Hardware Fuzzing</h2>
+                        <div class="content_block">
+                            <p>
+                                Hardware fuzzing is a recently developed technique for identifying vulnerabilities in hardware designs. 
+                                Since March of 2023, I have had the opportunity to work on a hardware fuzzing project in the SeTH Lab at Texas A&M University.
+                                The basic concept of hardware fuzzing is to generate random inputs to a hardware design and observe the outputs. By doing this
+                                we can identify any misbehavior in the processor to find vulnerabilities. This is a very new field of research, and I am excited
+                                to be able to contribute. You can read more about our hardware fuzzer, TheHuzz, on the 
+                                <a class="external_link" href="https://seth.engr.tamu.edu/research-2/">SeTH Lab website</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://seth.engr.tamu.edu/research-2/">
+                            <img class="portfo_img" src="images/fuzz_framework.png" alt="Hardware Fuzzer Framework">
+                            <p>Hardware Fuzzer Framework</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Digital Tachometer</h2>
+                        <div class="content_block">
+                            <p>
+                                This was a fun project that combined my love of cars with my passion for engineering. Using an Arduino Nano and a handful of 
+                                hobbyist electronics, I built a digital tachometer for my car. The tachometer is a device that measures the RPM of the engine.
+                                By wiring the ignition coil through a <a class="external_link" href="https://forum.arduino.cc/t/tachometer-from-ignition-coil/680264/15">filter</a>
+                                to the Arduino, I was able to measure the frequency of the ignition pulses and calculate the RPM. I then used a 7-segment 
+                                display to display the RPM on the windshield as a heads-up display, as well as a strip of colored LEDs. This was an extremely 
+                                fun project that allowed me to apply my engineering skills. Ultimately, my tachometer proved to be too distracting and only 
+                                moderately accurate, but it was a fantastic project nonetheless.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://forum.arduino.cc/t/tachometer-from-ignition-coil/680264/15">
+                            <img class="portfo_img" src="images/tach_circuit.png" alt="Digital Tachometer Circuit Diagram">
+                            <p>Circuit Diagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Home Automation</h2>
+                        <div class="content_block">
+                            <p>
+                                Almost everyone has some form of home automation nowadays, whether it's a smart thermostat, a wifi-controlled lightbulb, or an 
+                                Amazon Echo. I took this even further and built a home automation system from scratch. Using a Raspberry Pi and a platform
+                                called <a class="external_link" href="https://www.home-assistant.io/">"Home Assistant,"</a> I created a 
+                                <a class="external_link" href="https://www.z-wave.com/">Z-Wave</a> network to control my bedroom lights, my window blinds, and my 
+                                front door. The system has some awesome capabilities, like scheduling the blinds to open at sunrise, or turning on the lights 
+                                when I walk in the room. I learned a lot by building this system and had a great experience 
+                                interfacing software programming with real-world devices. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://www.home-assistant.io/">
+                            <img class="portfo_img" src="images/home_assistant.png" alt="The Home Assistant Logo">
+                            <p>Home Assistant Automation Platform</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+		<div class="footer_item"></div>
+		<div class="footer_item">
+			<a class="external_link" href="https://www.linkedin.com/in/kyle-minihan-ba7a75251/">
+				<img class="footer_img" src="images/linkedin_logo.png" alt="LinkedIn">
+			</a>
+		</div>
+		<div class="footer_item">
+			<p>kylepminihan@gmail.com</p>
+		</div>
+		<div class="footer_item">
+			<p>571-471-9611</p>
+		</div>
+		<div class="footer_item">
+			<a class="external_link" href="https://github.com/minmanrox">
+				<img class="footer_img" src="images/github_logo.png" alt="GitHub">
+			</a>
+		</div>
+		<div class="footer_item"></div>
+	</footer>
+    <script src="script.js"></script>
+</body>
+</html>
