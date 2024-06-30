@@ -6,19 +6,12 @@
     --grey-dark: #0b0c10;
 }
 
-.theme_toggle {
-    right: 20px;
-    top: 20px;
-    position: absolute;
-}
-
 body {
     background-color: black;
     color: var(--grey-light);
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     margin: auto;
-    padding-bottom: 60px;
 }
 
 a:visited {
@@ -203,7 +196,6 @@ footer {
     background-color: var(--grey-medium);
     color: var(--grey-light);
     text-align: center;
-    position: fixed;
 }
 
 .footer_item {
@@ -214,7 +206,14 @@ footer {
     height: 1em;
 }
 
-/* AI-generated CSS */
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* uI-generated CSS */
 .page_title {
     text-align: center;
 }
