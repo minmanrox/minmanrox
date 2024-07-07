@@ -9,12 +9,6 @@
     --text-invert: white;
 }
 
-.theme_toggle {
-    right: 20px;
-    top: 20px;
-    position: absolute;
-}
-
 body {
     background-color: var(--background-fill);
     color: var(--text-color);
@@ -25,7 +19,6 @@ body {
 
 .main_content {
     flex: 5;
-    border: 2px solid var(--outline-grey);
     border-top: 0px;
     border-bottom: 0px;
 }
@@ -71,35 +64,18 @@ a.nav_button_current {
 }
 
 /* Evenly space the buttons */
-.nav_bar {
-    flex: 1;
-    padding: 10px;
-    display: inline-block;
-    color: var(--text-color);
-    height: 100%;
-    width: 20%;
-}
-
-header {
+.navbar {
     background-color: var(--header-black);
     color: var(--text-invert);
-    height: 40px;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--outline-grey);
-}
-header::after {
-    content: "Personal Website - Kyle Minihan";
-    font-weight: bold;
 }
 
 /* Style the image */
 .cover_image {
-    width: calc(100% - 40px);
     height: 500px;
     object-fit: cover;
     margin: 20px;
+    margin-top: 0px;
+    padding: 0px;
     border: 2px solid var(--border-grey);
     border-radius: 10px;
 }
@@ -148,9 +124,8 @@ h3 {
 }
 
 .content_block {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin: 20px;
+    margin-top: 0px;
     padding: 20px;
     border: 2px solid var(--border-grey);
     border-top: 0px;
@@ -171,11 +146,6 @@ p.indent {
 /* Style main headings*/
 h1 {
     text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0px;
-    color: var(--text-invert);
 }
 
 /* Style each content section*/
@@ -259,7 +229,8 @@ li.b{
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 100%;
+    max-width: max-content;
+    width: 90%;
     background-color: var(--background-fill);
 }
 
@@ -306,6 +277,15 @@ footer {
 
 .footer_img {
     height: 1em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .flex_container {
+        flex-direction: column;
+    }
 }
 
 /* AI-generated CSS */
