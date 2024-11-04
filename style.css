@@ -9,7 +9,7 @@
 body {
     background-color: black;
     color: var(--grey-light);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto';
     font-size: 18px;
     margin: auto;
 }
@@ -77,6 +77,10 @@ h2 {
     color: var(--blue-medium);
     margin: auto;
     width: 90%;
+}
+
+h2.main_heading {
+    margin-left: 120px;
 }
 
 h3 {
@@ -155,7 +159,7 @@ li.b{
 
 .external_link {
     color: var(--grey-light);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
 }
 

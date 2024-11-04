@@ -195,7 +195,7 @@ li.b{
 
 .external_link {
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
 }
 

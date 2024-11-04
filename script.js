@@ -18,3 +18,10 @@ window.onload = function() {
     
     if (stylesheet) element.setAttribute("href", stylesheet);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const externalLinks = document.querySelectorAll('.external_link');
+    externalLinks.forEach(link => {
+        link.setAttribute('target', '_blank');
+    });
+});
