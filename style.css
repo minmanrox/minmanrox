@@ -146,7 +146,7 @@ li.b{
 }
 
 /* Style download link */
-.download_link {
+.unstyled_link {
     display: block;
     margin: auto;
     width: 90%;

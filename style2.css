@@ -179,7 +179,7 @@ li.b{
 }
 
 /* Style download link */
-.download_link {
+.unstyled_link {
     display: block;
     position: relative;
     top: -100px;
