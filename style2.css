@@ -15,6 +15,7 @@ body {
     color: var(--text-color);
     font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
+    font-weight: 600;
     margin: auto;
 }
 
@@ -142,8 +143,8 @@ p {
 }
 
 p.indent {
-    text-indent: 50px;
-    margin-bottom: 10px;
+    text-indent: 0px;
+    margin-bottom: 25px;
 }
 
 /* Style main headings*/

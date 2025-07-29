@@ -11,6 +11,7 @@ body {
     color: var(--grey-light);
     font-family: 'Roboto';
     font-size: 18px;
+    font-weight: 500;
     margin: auto;
 }
 
@@ -99,8 +100,8 @@ p {
 }
 
 p.indent {
-    text-indent: 50px;
-    margin-bottom: 10px;
+    text-indent: 0px;
+    margin-bottom: 25px;
 }
 
 /* Style main headings*/
